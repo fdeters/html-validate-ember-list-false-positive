@@ -6,7 +6,7 @@ import BreadcrumbItem from '../components/breadcrumb/item';
   {{pageTitle "HtmlValidateEmberListFalsePositive"}}
   <h2 id="title">Welcome to Ember</h2>
 
-  {{!-- this structure is nav > ol > li, but it throws element-permitted-content/parent errors --}}
+  {{! this structure is nav > ol > li, but it throws element-permitted-content/parent errors }}
   <Breadcrumb>
     <BreadcrumbItem @href="/">Home</BreadcrumbItem>
   </Breadcrumb>
