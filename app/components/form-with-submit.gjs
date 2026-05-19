@@ -1,0 +1,8 @@
+<template>
+  <form>
+    <label for="foo">Foo</label>
+    <input type="text" name="foo" id="foo" />
+
+    <button type="submit">Submit</button>
+  </form>
+</template>

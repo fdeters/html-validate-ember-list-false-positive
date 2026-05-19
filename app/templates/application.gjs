@@ -1,6 +1,7 @@
 import { pageTitle } from 'ember-page-title';
 import Breadcrumb from '../components/breadcrumb';
 import BreadcrumbItem from '../components/breadcrumb/item';
+import FormWithSubmit from '../components/form-with-submit';
 
 <template>
   {{pageTitle "HtmlValidateEmberListFalsePositive"}}
@@ -10,5 +11,8 @@ import BreadcrumbItem from '../components/breadcrumb/item';
   <Breadcrumb>
     <BreadcrumbItem @href="/">Home</BreadcrumbItem>
   </Breadcrumb>
+
+  {{! this form has a submit button but the invocation here throws wcag/h32 }}
+  <FormWithSubmit />
   {{outlet}}
 </template>
