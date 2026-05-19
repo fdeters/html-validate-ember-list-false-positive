@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "html-validate:recommended",
+    "html-validate-ember:gts-recommended"
+  ],
+  "plugins": [
+    "html-validate-ember"
+  ],
+  "transform": {
+    "^.*\\.(gts|gjs|hbs)$": "html-validate-ember"
+  }
+}
